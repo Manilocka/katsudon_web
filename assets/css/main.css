@@ -41,7 +41,7 @@ img{
     display:flex;
     position:relative;
 }
-.navbar-side>ul{
+.navbar-side ul{
     display:flex;
     list-style: none;
     gap: 25px;
@@ -50,4 +50,20 @@ img{
 
 .top-navbar{
     box-shadow: inset 0 -1px 0 #B0B0B0;
+}
+
+.top-navbar a{
+    color:var(--black-color);
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.navbar-brand{
+    margin-right: 50px;
+}
+
+.navbar-side ul i{
+    color: var(--grey-color);
+    font-size: 18px;
 }
