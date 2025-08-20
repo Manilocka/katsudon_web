@@ -36,3 +36,18 @@ img{
 .font-bold {
     font-weight: 700;
 }
+
+.navbar-side{
+    display:flex;
+    position:relative;
+}
+.navbar-side>ul{
+    display:flex;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 0px;
+}
+
+.top-navbar{
+    box-shadow: inset 0 -1px 0 #B0B0B0;
+}
