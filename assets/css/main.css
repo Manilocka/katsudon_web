@@ -77,3 +77,13 @@ img{
 .navbar-side>ul>li>a:hover i {
     color: var(--main-color)
 }
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.5em;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f078"; 
+    border: none !important;
+    vertical-align: middle;
+}
