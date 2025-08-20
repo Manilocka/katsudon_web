@@ -51,8 +51,6 @@ img{
     content: "";
     width: 100%;
     display:block;
-    border-top: 1px solid var(--grey-color);
-    transform: scale(0);
 }
 .navbar-brand{
     margin-right: 50px;
