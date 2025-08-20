@@ -41,7 +41,7 @@ img{
     display:flex;
     position:relative;
 }
-.navbar-side ul{
+.navbar-side>ul{
     display:flex;
     list-style: none;
     gap: 25px;
@@ -66,4 +66,10 @@ img{
 .navbar-side ul i{
     color: var(--grey-color);
     font-size: 18px;
+    transition: all .3s;
+}
+
+.navbar-side>ul>li>a:hover,
+.navbar-side>ul>li>a:hover i {
+    color: var(--main-color)
 }
