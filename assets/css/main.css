@@ -17,7 +17,7 @@ body {
     line-height: 26px;
     font-style: normal;
     background-color: var(--bg-color);
-    color:var(--grey-color);
+    color:var(--black-color);
 }
 
 img{
@@ -45,6 +45,17 @@ img{
     border: 0;
     color:#fff
 }
+
+section h1,
+section h2{
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 62px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 
 
 
@@ -194,6 +205,7 @@ html {
     max-width: 50%;
     margin-top: 15px;
     margin-bottom: 15px;
+    color:var(--grey-color);
 
 }
 
@@ -226,4 +238,46 @@ html {
 }
 .slider{
     margin-bottom: 100px;
+}
+
+
+
+.main-categories{
+    margin-top:90px;
+    margin-bottom:90px;
+}
+
+.main-categories-card{
+    
+    padding: 40px;
+    /* margin: 40px; */
+    margin-top: 40px;
+    background-color: #FAFAFA;
+}
+.main-categories-card-thumb{
+    text-align: right;
+
+}
+.main-categories-card-thumb img{
+    height: 300px;
+    object-fit: cover;
+    transition: all .3s;
+
+}
+.main-categories-card-thumb img:hover{
+    transform: scale(1.2);
+}
+.main-categories-card-desc h3{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500;
+
+}
+.main-categories-card-desc .btn{
+padding: 12px 70px;
+}
+.main-categories-add-title{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
 }

@@ -64,4 +64,27 @@
         background-color: transparent !important;
     }
     
+    .main-categories-card-desc{
+        display:none;
+    }
+    .main-categories-card{
+        padding: 0;
+    }
+    .main-categories-card-thumb img{
+        height: 200px;
+
+    }
+}
+
+@media all and (min-width: 768.98px) {
+    .main-categories-add-title{
+        display:none
+    }
+}
+
+@media all and (max-width: 768px) {
+    .main-categories-card-thumb img{
+        height: 150px;
+
+    }
 }
