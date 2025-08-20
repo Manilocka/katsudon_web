@@ -206,3 +206,24 @@ html {
 .carousel-btn{
     margin-top: 15px;
 }
+
+.slider .carousel-control-prev, 
+.slider .carousel-control-next{
+    position:relative;
+    background-color: transparent !important;
+}
+.slider .carousel .carousel-indicators .btn-dot{
+    background-color: var(--grey-color);
+}
+.slider .carousel .carousel-indicators .btn-dot.active{
+    background-color: var(--black-color);
+}
+.slider .carousel{
+    padding-bottom: 50px;
+}
+.slider .carousel .carousel-indicators{
+    bottom: 10px;
+}
+.slider{
+    margin-bottom: 100px;
+}
