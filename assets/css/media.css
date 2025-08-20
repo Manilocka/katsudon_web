@@ -1,6 +1,6 @@
 @media all and (min-width: 992px) {
     .dropdown:hover>.dropdown-toggle::after{
-        content: "\f077"
+        content: "\f077";
     }
     .top-navbar .dropdown:hover>.dropdown-menu{
         display:block;
@@ -14,14 +14,11 @@
         position:static;
     }
 
-    .top-navbar .dropdown-menu{
-        box-shadow: 0 4px 18px -2px rgba(0, 0, 0, .1);
-    }
 }
 
 @media all and (max-width: 991.98px) {
     .dropdown-toggle.show::after{
-        content: "\f077" ;
+        content: "\f077";
     }
 
 }
