@@ -64,7 +64,8 @@ img{
 }
 
 .navbar-side ul i{
-    color: var(--grey-color);
+    /* color: var(--grey-color); */
+    color: var(--main-color);
     font-size: 18px;
     transition: all .3s;
 }
