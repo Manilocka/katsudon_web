@@ -20,5 +20,14 @@
 
 @media all and (max-width: 991.98px) {
 
-
+    .navbar-brand {
+        margin-right: 0;
+    }
+    .navbar-side>ul{
+        display:flex;
+        list-style: none;
+        gap: 17px;
+        margin-bottom: 0px;
+    
+    }
 }
