@@ -1,0 +1,23 @@
+@media all and (min-width: 992px) {
+    .dropdown:hover>.dropdown-toggle::after{
+        content: "\f077"
+    }
+    .top-navbar .dropdown:hover>.dropdown-menu{
+        display:block;
+    }
+
+    .navbar-side .dropdown-menu-end{
+        right:0;
+        left: auto;
+    }
+    .dropdown-menu{
+        position:static;
+    }
+}
+
+@media all and (max-width: 991.98px) {
+    .dropdown-toggle.show::after{
+        content: "\f077";
+    }
+
+}
