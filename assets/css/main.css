@@ -79,19 +79,20 @@ img{
 }
 
 .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.5em;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f078"; 
-    border: none !important;
-    vertical-align: middle;
-}
+            display: none;
+    }
+.dropdown-toggle i.fa-chevron-down {
+            margin-left: 0.5em;
+            transition: transform 0.3s;
+        }
 
 .top-navbar .dropdown-menu{
         box-shadow: 0 4px 18px -2px rgba(0, 0, 0, .1);
     }
 
+.dropdown-menu.show {
+    margin-top: 0 !important;
+}
 .dropdown-menu a{
     color: var(--black-color);
     font-size: 16px;
