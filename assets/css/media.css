@@ -74,6 +74,24 @@
         height: 200px;
 
     }
+    .main-categories{
+        margin-top:50px;
+        margin-bottom:30px;
+    }
+    .slider{
+        margin-bottom: 50px;
+    }
+    section h1,
+    section h2{
+        color: var(--black-color);
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 62px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
 }
 
 @media all and (min-width: 768.98px) {
