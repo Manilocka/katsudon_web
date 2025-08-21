@@ -24,3 +24,16 @@ $(function () {
         return false;
     });
 });
+
+
+document.getElementById('offcanvasNavbar').addEventListener('click', function(e) {
+    const target = e.target;
+    
+    if (target.tagName === 'A' && 
+        (!target.classList.contains('dropdown-toggle') || 
+         target.classList.contains('dropdown-item'))) {
+        
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(this);
+        bsOffcanvas.hide();
+    }
+});
