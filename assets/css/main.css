@@ -85,6 +85,20 @@ main.main{
 #top:hover{
     opacity: 1;
 }
+.breadcrumb-item a{
+    color: var(--grey-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .3s;
+}
+.breadcrumb-item a:hover{
+    color: var(--black-color);
+}
+
+.breadcrumb-item{
+    margin-top: 20px;
+
+}
 
 
 
