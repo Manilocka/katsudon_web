@@ -7,3 +7,4 @@ function scrollToSlider() {
         behavior: 'smooth'
     });
 }
+

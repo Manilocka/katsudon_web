@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katsudon</title>
+    <title>Katsudon :: Home</title>
+    <link rel="icon" href="assets/img/favicon.png">
 
     <script src="https://kit.fontawesome.com/1a739bc4ac.js" crossorigin="anonymous"></script>
 
@@ -24,258 +25,261 @@
 
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light top-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo.svg" alt="logo with word KATSUDON">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Каталог 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Alien Stage</a></li>
-                            <li><a class="dropdown-item" href="#">Honkai Star Rail</a></li>
-                            <li><a class="dropdown-item" href="#">Куплинов</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
-                    </li>            
-                </ul>
-            </div>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasTopLabel">Меню</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light top-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.svg" alt="logo with word KATSUDON">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Каталог 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Alien Stage</a></li>
-                            <li><a class="dropdown-item" href="#">Honkai Star Rail</a></li>
-                        </ul>
+                            <a class="nav-link dropdown-toggle" href="#catalog-section" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Каталог 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Alien Stage</a></li>
+                                <li><a class="dropdown-item" href="#">Honkai Star Rail</a></li>
+                                <li><a class="dropdown-item" href="#">Куплинов</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
+                            <a class="nav-link" href="#">О нас</a>
                         </li>            
-                    </ul>                    
+                    </ul>
+                </div>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasTopLabel">Меню</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Каталог 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Alien Stage</a></li>
+                                <li><a class="dropdown-item" href="#">Honkai Star Rail</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                            </li>            
+                        </ul>                    
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div class="navbar-side">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </nav>
-    </header>
-    <section class="hero-section">
-        <div class="hero-content" onclick="scrollToSlider()">
-            <img src="assets/img/main.png" alt="телефон с 3д наклейками Мидея" class="hero-image">
-            <div class="scroll-indicator" onclick="scrollToSlider()">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
-    </section>
-    <section class="slider">
-        <div class="container">
-                <div id="carousel-indicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="btn-dot active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" class="btn-dot"aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" class="btn-dot"aria-label="Slide 3"></button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="navbar-side">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="assets/img/slider/1.png" alt="3д стикеры с Гертой">
+            </div>
+            </nav>
+        </header>
+        <section class="hero-section">
+            <div class="hero-content" onclick="scrollToSlider()">
+                <img src="assets/img/main.png" alt="телефон с 3д наклейками Мидея" class="hero-image">
+                <div class="scroll-indicator" onclick="scrollToSlider()">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container">
+                    <div id="carousel-indicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="btn-dot active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" class="btn-dot"aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" class="btn-dot"aria-label="Slide 3"></button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="assets/img/slider/1.png" alt="3д стикеры с Гертой">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="carousel-text">
+                                        <h5>3D стикеры<br>Герта и Жуань</h5>
+                                        <div class="carousel-desc">
+                                            <p>Внимание!!! Будьте осторожны, две гениальные дамы сделают ваш телефон слишком горячим</p>
+                                        </div>
+                                        <div class="carousel-price">
+                                            <strong> 250₽</strong>
+                                            <p class="carousel-btn">
+                                                <a href="https://www.ozon.ru/product/3d-nakleyka-na-smartfon-planshet-gerta-zhuan-honkay-star-reyl-1878461594/" class="btn btn-primary">Купить на Ozon</a>
+                                            </p>
+                                        </div>
+                                    </div>   
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="carousel-text">
-                                    <h5>3D стикеры<br>Герта и Жуань</h5>
+                        
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="assets/img/slider/3.png" alt="3д стикеры с Куплиновым">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="carousel-text">
+                                    <h5>3D стикеры<br>Куплинов</h5>
                                     <div class="carousel-desc">
-                                        <p>Внимание!!! Будьте осторожны, две гениальные дамы сделают ваш телефон слишком горячим</p>
+                                        <p>Любимый блогер будет радовать взгляд</p>
+                                    </div>
+                                    <div class="carousel-price">
+                                        <strong> 400₽</strong>
+                                        <p class="carousel-btn">
+                                            <a class="btn btn-primary-delete">Закончился</a>
+                                        </p>
+                                    </div>
+                                </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="assets/img/slider/2.png" alt="3д стикеры с Мидеем">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="carousel-text">
+                                    <h5>3D стикеры<br>Мидей</h5>
+                                    <div class="carousel-desc">
+                                        <p>Бессмертный Мидей украсит ваш телефон</p>
                                     </div>
                                     <div class="carousel-price">
                                         <strong> 250₽</strong>
                                         <p class="carousel-btn">
-                                            <a href="https://www.ozon.ru/product/3d-nakleyka-na-smartfon-planshet-gerta-zhuan-honkay-star-reyl-1878461594/" class="btn btn-primary">Купить на Ozon</a>
+                                            <a class="btn btn-primary-delete">Закончился</a>
                                         </p>
                                     </div>
                                 </div>   
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="assets/img/slider/3.png" alt="3д стикеры с Куплиновым">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="carousel-text">
-                                <h5>3D стикеры<br>Куплинов</h5>
-                                <div class="carousel-desc">
-                                    <p>Любимый блогер будет радовать взгляд</p>
                                 </div>
-                                <div class="carousel-price">
-                                    <strong> 400₽</strong>
-                                    <p class="carousel-btn">
-                                        <a class="btn btn-primary-delete">Закончился</a>
-                                    </p>
-                                </div>
-                            </div>   
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="assets/img/slider/2.png" alt="3д стикеры с Мидеем">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="carousel-text">
-                                <h5>3D стикеры<br>Мидей</h5>
-                                <div class="carousel-desc">
-                                    <p>Бессмертный Мидей украсит ваш телефон</p>
-                                </div>
-                                <div class="carousel-price">
-                                    <strong> 250₽</strong>
-                                    <p class="carousel-btn">
-                                        <a class="btn btn-primary-delete">Закончился</a>
-                                    </p>
-                                </div>
-                            </div>   
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-        </div>
-
-    </section>
-
-
-    <section class="main-categories">
-        <div class="container">
-            <h2>Категории</h2>
-            <div class="row row-gap-4">
-                <div class="col-6">
-                    <div class="main-categories-card">
-                        <a href="#">
-                            <div class="main-categories-card-thumb">
-                                <img src="assets/img/categories/1.png" alt="3д стикеры с Куплиновым">
-                            </div> 
-                        </a>
-                        <div class="main-categories-card-desc">
-                            <h3>Куплинов</h3>
-                            <a href="#" class="btn btn-outline-dark">Перейти</a>
-                        </div>
-                    </div>
-                    <h3 class="main-categories-add-title">Куплинов</h3>
-                </div>
-                <div class="col-6">
-                    <div class="main-categories-card">
-                        <a href="#">
-                            <div class="main-categories-card-thumb">
-                                <img src="assets/img/categories/2.png" alt="Голографические стикеры с Гертой">
-                            </div> 
-                        </a>
-                        <div class="main-categories-card-desc">
-                            <h3>Honkai Star Rail</h3>
-                            <a href="#" class="btn btn-outline-dark">Перейти</a>
-                        </div>
-                    </div>
-                    <h3 class="main-categories-add-title">Honkai Star Rail</h3>
-                </div>
-                <div class="col-6">
-                    <div class="main-categories-card">                        
-                        <a href="#">
-                            <div class="main-categories-card-thumb">
-                                <img src="assets/img/categories/3.png" alt="Брелоки с Alien Stage">
-                            </div> 
-                        </a>
-                        <div class="main-categories-card-desc">
-                            <h3>Alien Stage</h3>
-                            <a href="#" class="btn btn-outline-dark">Перейти</a>
-                        </div>
-                    </div>
-                    <h3 class="main-categories-add-title">Alien Stage</h3>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- <section class="catalog">
-        <div class="product-card">
-            <div class="product-card-thumb">
-                <a href=""><img scr="assets/img/catalog/1.png" alt=""></a>
-            </div> 
-        </div>
-    </section> -->
-    <footer class="footer-top">
-        <div class="footer-top">
+        </section>
+
+
+        <section class="main-categories" id="catalog-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-logo-wrapper">
-                            <div>
-                                <img src="assets/img/logo.svg" alt="логотип катсудон">
+                <h2>Каталог</h2>
+                <div class="row row-gap-4">
+                    <div class="col-6">
+                        <div class="main-categories-card">
+                            <a href="#">
+                                <div class="main-categories-card-thumb">
+                                    <img src="assets/img/categories/1.png" alt="3д стикеры с Куплиновым">
+                                </div> 
+                            </a>
+                            <div class="main-categories-card-desc">
+                                <h3>Куплинов</h3>
+                                <a href="#" class="btn btn-outline-dark">Перейти</a>
                             </div>
                         </div>
-
+                        <h3 class="main-categories-add-title">Куплинов</h3>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Каталог</a></li>
-                            <li><a href="#">О нас</a></li>
-                        </ul>
+                    <div class="col-6">
+                        <div class="main-categories-card">
+                            <a href="#">
+                                <div class="main-categories-card-thumb">
+                                    <img src="assets/img/categories/2.png" alt="Голографические стикеры с Гертой">
+                                </div> 
+                            </a>
+                            <div class="main-categories-card-desc">
+                                <h3>Honkai Star Rail</h3>
+                                <a href="#" class="btn btn-outline-dark">Перейти</a>
+                            </div>
+                        </div>
+                        <h3 class="main-categories-add-title">Honkai Star Rail</h3>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-icons">
-                            <ul>
-                                <li><a href="https://vk.com/club232252530?from=groups"><i class="fa-brands fa-vk"></i></a></li>
-                                <li><a href="https://vk.com/club232252530?from=groups"><i class="fa-brands fa-telegram"></i></a></li>
-                                <li><a href="https://vk.com/club232252530?from=groups"><i class="fa-brands fa-tiktok"></i></a></li>
-                            </ul>
-                        </div>                       
-                    </div>                    
+                    <div class="col-6">
+                        <div class="main-categories-card">                        
+                            <a href="#">
+                                <div class="main-categories-card-thumb">
+                                    <img src="assets/img/categories/3.png" alt="Брелоки с Alien Stage">
+                                </div> 
+                            </a>
+                            <div class="main-categories-card-desc">
+                                <h3>Alien Stage</h3>
+                                <a href="#" class="btn btn-outline-dark">Перейти</a>
+                            </div>
+                        </div>
+                        <h3 class="main-categories-add-title">Alien Stage</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container footer-bottom">
-            &copy; 2025 Все права защищены.
-        </div>
-    </footer>
+        </section>
+
+        <!-- <section class="catalog">
+            <div class="product-card">
+                <div class="product-card-thumb">
+                    <a href=""><img scr="assets/img/catalog/1.png" alt=""></a>
+                </div> 
+            </div>
+        </section> -->
+        <footer class="footer-top">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-logo-wrapper">
+                                <div>
+                                    <img src="assets/img/logo.svg" alt="логотип катсудон">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#catalog-section">Каталог</a></li>
+                                <li><a href="#">О нас</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-icons">
+                                <ul>
+                                    <li><a href="https://vk.com/club232252530?from=groups"><i class="fa-brands fa-vk"></i></a></li>
+                                    <li><a href="t.me/kotleta_katsu"><i class="fa-brands fa-telegram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>                       
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                &copy; 2025 Все права защищены.
+            </div>
+        </footer>
+    </div>
+
 
 </div>
     <script src="assets/js/main.js"></script>
