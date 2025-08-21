@@ -197,6 +197,7 @@ main.main{
     position: relative;
     height: 100vh;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .hero-content {
