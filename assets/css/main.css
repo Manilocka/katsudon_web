@@ -324,13 +324,16 @@ html {
     font-weight: 500;
 
 }
+
 .main-categories-card-desc .btn{
 padding: 12px 70px;
 }
-.main-categories-add-title{
+.main-categories-add-title a{
     font-size: 14px;
     line-height: 24px;
     margin-top: 10px;
+    text-decoration: none;
+    color: #202020;
 }
 
 
