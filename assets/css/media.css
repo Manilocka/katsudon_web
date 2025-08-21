@@ -30,6 +30,16 @@
         margin-bottom: 0px;
     
     }
+    .footer-top [class^="col"]{
+        margin-top: 25px;
+    }
+    .footer-top{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer-icons ul{
+        flex-direction: row;
+    }
 }
 
 @media all and (max-width: 768px) {
