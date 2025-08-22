@@ -126,8 +126,22 @@
     .swiper-button-prev::after {
         font-size: 18px;
     }
+    .swiper {
+        height: auto;
+        margin-bottom: 20px;
+    }
 
-
+    .product-main-desc h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-main-desc h5{
+        margin-bottom: 20px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
 
 }
 
