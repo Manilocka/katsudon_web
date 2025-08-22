@@ -9,19 +9,59 @@ function scrollToSlider() {
 }
 
 $(function () {
-    const topBtn = $('#top');
+    // const topBtn = $('#top');
     
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 600) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() > 600) {
+    //         topBtn.fadeIn();
+    //     } else {
+    //         topBtn.fadeOut();
+    //     }
+    // });
+    
+    // topBtn.click(function() {
+    //     $('html, body').animate({scrollTop: 0}, 200);
+    //     return false;
+    // });
+    // const swiper = new Swiper('.swiper', {
+    // // Optional parameters
+    // loop: true,
+
+    // // If we need pagination
+    // pagination: {
+    //     el: '.swiper-pagination',
+    // },
+
+    // // Navigation arrows
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+
+    // // And if we need scrollbar
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    // },
+    // });
+
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+        loop: true,
+      freeMode: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
     });
-    
-    topBtn.click(function() {
-        $('html, body').animate({scrollTop: 0}, 200);
-        return false;
+    var swiperGallery = new Swiper(".swiper-gallery", {
+        loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiperThumbs,
+      },
     });
 });
 
@@ -37,3 +77,4 @@ document.getElementById('offcanvasNavbar').addEventListener('click', function(e)
         bsOffcanvas.hide();
     }
 });
+
