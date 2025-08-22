@@ -1,12 +1,5 @@
-function scrollToSlider() {
-    const sliderSection = document.getElementById('slider');
-    const heroHeight = document.querySelector('.hero-section').offsetHeight;
-    
-    window.scrollTo({
-        top: heroHeight,
-        behavior: 'smooth'
-    });
-}
+
+
 
 $(function () {
     const topBtn = $('#top');
@@ -162,77 +155,3 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Ждем пока Bootstrap полностью загрузится
-    if (typeof bootstrap !== 'undefined') {
-        initializeCookieBanner();
-    } else {
-        // Если Bootstrap еще не загружен, ждем
-        setTimeout(initializeCookieBanner, 100);
-    }
-});
-
-function initializeCookieBanner() {
-    const cookieElement = document.getElementById('offcanvasCookie');
-    
-    if (!cookieElement) return;
-    
-    // Инициализируем offcanvas
-    const offcanvasCookie = new bootstrap.Offcanvas(cookieElement);
-    
-    // Проверяем куки
-    if(!getCookie('allowCookie')) {
-        setTimeout(() => {
-            offcanvasCookie.show();
-        }, 3000);
-    }
-
-    // Обработчик кнопки
-    const allowButton = document.querySelector('#allow-cookie');
-    if (allowButton) {
-        allowButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            setCookie('allowCookie', '1', {secure: true, 'max-age': 3600 * 24 * 365});
-            offcanvasCookie.hide();
-        });
-    }
-}
-
-// Ваши функции getCookie, setCookie, deleteCookie остаются без изменений
-function getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
-}
-
-function setCookie(name, value, options = {}) {
-    options = {
-        path: '/',
-        ...options
-    };
-
-    if (options.expires instanceof Date) {
-        options.expires = options.expires.toUTCString();
-    }
-
-    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-    for (let optionKey in options) {
-        updatedCookie += "; " + optionKey;
-        let optionValue = options[optionKey];
-        if (optionValue !== true) {
-            updatedCookie += "=" + optionValue;
-        }
-    }
-
-    document.cookie = updatedCookie;
-}
-
-function deleteCookie(name) {
-    setCookie(name, "", {
-        'max-age': -1
-    });
-}
