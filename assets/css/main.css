@@ -529,3 +529,28 @@ padding: 12px 70px;
     line-height: 21px;
     letter-spacing: 5%;
 }
+.product-main-desc-price{
+    color: var(--black-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.product-main-desc-add2cart{
+    display: flex;
+    align-items: center;
+}
+.input-group{
+    width: auto;
+    gap: 30px;
+    margin-bottom: 30px;
+    
+}
+.product-main-desc-add2cart{
+    color: var(--grey-color);
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 30px;
+}
+.product-main-desc-add2cart:hover{
+    color: var(--black-color);
+}

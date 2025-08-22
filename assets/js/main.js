@@ -143,18 +143,20 @@ style.textContent = `
     
     .product-sku {
         cursor: pointer;
-        padding: 4px 8px;
+        border: 1px solid #fff;
         border-radius: 3px;
+        
 
         transition: all 0.3s ease;
     }
     
     .product-sku:hover {
-        background: #fafafa;
+        border-color: #B0B0B0;
+
     }
     
     .product-sku:active {
-        background: #fafafa;
+        border-color: #B0B0B0;
     }
 `;
 document.head.appendChild(style);
